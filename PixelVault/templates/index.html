@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PixelVault</h1>
+
+        <h2>🔐 Encode Text into Image <p style="font-size: 0.9rem; color: #555; margin-top: 5px;">
+  <strong>Note :</strong> Only <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, and <code>.bmp(Bitmap)</code> images are supported.</br>
+  For best results, use <strong>PNG</strong> format to ensure data accuracy.
+</p>
+</h2>
+        <form method="POST" action="/encode" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/png, image/jpeg" required>
+            <textarea name="text" placeholder="Enter secret text here..." required></textarea>
+            <button type="submit">Encode & Download</button>
+        </form>
+
+        <h2>🔎 Decode Text from Image</h2>
+        <form method="POST" action="/decode" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/png, image/jpeg" required>
+            <button type="submit">Decode</button>
+        </form>
+    </div>
+
+    <div class="footer-info">
+  <p><strong>What is Steganography?</strong> It’s the art of hiding secret data inside images.</p>
+  <p><em>This tool embeds hidden messages securely in images using LSB technique.</em></p>
+</div>
+
+    <footer class="footer">
+  <p class="tagline"> PixelVault | Turning Images into Vaults</p>
+</footer>
+
+
+</body>
+</html>

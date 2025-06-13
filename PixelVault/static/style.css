@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #f0f4c3);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1e88e5;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="file"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: 0.2s ease;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="file"]:hover,
+textarea:focus {
+    border-color: #64b5f6;
+    outline: none;
+    box-shadow: 0 0 8px rgba(100, 181, 246, 0.3);
+}
+
+button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+.result-text {
+    background-color: #f1f8e9;
+    border-left: 4px solid #8bc34a;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: linear-gradient(to right, #bbdefb, #e3f2fd);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    border-top: 2px solid #90caf9;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1565c0;
+}
+
+.footer .tagline {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.footer .tool-name {
+    font-size: 0.9em;
+    color: #1e88e5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.footer-info {
+    margin-top: 15px;
+    font-size: 0.85em;
+    color: #455a64;
+    line-height: 1.5em;
+    text-align: center;
+}
